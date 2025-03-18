@@ -33,6 +33,40 @@ $transactions = mysqli_fetch_all($result, MYSQLI_ASSOC);
     <link rel="icon" href="logo.png" type="image/x-icon"> 
     <link rel="stylesheet" href="mycss.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+    .stats-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+.stat-card {
+    background:White;
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    width: 250px; 
+    flex: 1; 
+    min-width: 200px; 
+}
+
+.stat-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+    </style>
 </head>
 <body>
     <div class="sidebar">
