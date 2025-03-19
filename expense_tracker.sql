@@ -70,5 +70,7 @@ create table feedback(
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 drop table feedback;
+truncate table expenses;
+truncate table income;
 desc user_status;
 select * from user_status;
